@@ -4,13 +4,13 @@
 
 * Figma link = https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/Random-Password-Generator-(New-version)?node-id=0%3A1
 
-* Requirements of Project
+* Requirements of Project 
 
-* Generate two random passwords when user clicks the button
+* Generate two random passwords when user clicks the button ok 
 
-* Each password should be 15 characters long
+* Each password should be 15 characters long ok
 
-* ability to set password length
+* ability to set password length 
 
 * add copy on click
 
