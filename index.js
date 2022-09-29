@@ -11,7 +11,6 @@ function generatePassword(passwordLength) {
     }
     let passwordString = generatedPassword.join('') 
     return passwordString
-
 }
 document.getElementById("password1").innerText = generatePassword(length)
 document.getElementById("password2").innerText = generatePassword(length)
@@ -21,3 +20,17 @@ document.getElementById("generate").addEventListener("click", function(){
     document.getElementById("password1").innerText = generatePassword(length)
     document.getElementById("password2").innerText = generatePassword(length)
 })
+
+document.getElementById("password1").addEventListener("click", function(){
+    let copyText = document.getElementById("password1").textContent
+    navigator.clipboard.writeText(copyText).then(function(x) {
+        alert("Password copied to clipboard: " + copyText);
+      });
+    })
+
+document.getElementById("password2").addEventListener("click", function(){
+    let copyText = document.getElementById("password2").textContent
+    navigator.clipboard.writeText(copyText).then(function(x) {
+        alert("Password copied to clipboard: " + copyText);
+      });
+    })

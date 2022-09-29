@@ -10,7 +10,7 @@
 
 * Each password should be 15 characters long ok
 
-* ability to set password length 
+* ability to set password length ok
 
 * add copy on click
 
