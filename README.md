@@ -12,6 +12,6 @@
 
 * ability to set password length ok
 
-* add copy on click
+* add copy on click ok
 
 * toggle symbols and numbers on/off

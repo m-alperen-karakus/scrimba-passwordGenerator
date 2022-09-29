@@ -17,6 +17,7 @@ body {
     font-size: 20px;
     font-family: 'Inter';
     margin-bottom: 50px;
+    margin-top: 10px;
 }
 hr{ 
     border: 1px solid #D5D4D8; 
@@ -51,7 +52,7 @@ button{
     justify-content: flex-start;
     align-items: center;
 }
-input{
+.length{
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     border: 3px solid #10B981;
@@ -63,8 +64,55 @@ input{
     font-family: 'Inter';
     
 }
-input:focus{
+.length:focus{
     outline: none !important;
     border: 3px solid #10B981 !important;
     background-color:#fff;
 }
+
+.symbols{
+    cursor: pointer;
+    color: #6B7280;
+    font-size: 20px;
+    font-family: 'Inter';
+    margin: 20px 0px;
+
+}
+
+.symbols input{ display: none; }
+.checkmark{
+
+position: absolute;
+margin-left: 10px;  
+height: 25px;
+width: 25px;
+border: 3px solid #10B981 ;
+background-color: #ECFDF5;
+}
+.symbols:hover input ~ .checkmark { background-color: #ECFDF5; }
+.symbols input:checked ~ .checkmark { 
+    height: 31px;
+    width: 31px;
+    border: none;
+    background-color: #2196F3; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .symbols input:checked ~ .checkmark:after { display: block; }
+  
+  /* Style the checkmark/indicator */
+  .symbols .checkmark:after {
+    left: 12px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
