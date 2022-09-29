@@ -108,7 +108,7 @@ background-color: #ECFDF5;
   
   /* Style the checkmark/indicator */
   .symbols .checkmark:after {
-    left: 12px;
+    left: 11px;
     top: 7px;
     width: 5px;
     height: 10px;
