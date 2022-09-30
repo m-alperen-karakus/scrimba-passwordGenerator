@@ -14,4 +14,4 @@
 
 * add copy on click ok
 
-* toggle symbols and numbers on/off
+* toggle symbols and numbers on/off ok
